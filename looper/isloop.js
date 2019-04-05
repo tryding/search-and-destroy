@@ -6,7 +6,7 @@ const isLoop = (linkedlist) => {
     let head = linkedlist.head
     while (head.next) {
         holder.push(head)
-        head = linkedlist.head.next
+        head = head.next
         if (holder.includes(head.next)) {
             return true
         }
